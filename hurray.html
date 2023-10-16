@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="hurray.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Delius+Unicase:wght@700&family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Star Images -->
+    <div class="starImages">
+        <img src="Star 1.png" alt="" class="sr1">
+        <img src="Star 2.png" alt="" class="sr2">
+        <img src="Star 3.png" alt="" class="sr3">
+        <img src="Star 4.png" alt="" class="sr4">
+        <img src="Star 5.png" alt="" class="sr5">
+        <img src="Star 6.png" alt="" class="sr6">
+        <img src="Star 7.png" alt="" class="sr7">
+        <img src="Star 9.png" alt="" class="sr9">
+        <img src="Trophy.png" alt="" class="trophy">
+    </div>
+
+    <!-- Play Button  -->
+    <div>
+        <p class="hurray">HURRAY!!</p>
+        <p class="youWon">YOU WON THE GAME</p>
+        <button class="playButton">PLAY AGAIN</button>
+    </div>
+
+    <!--Rule Button  -->
+    <div>
+        <button class="ruleButton" onclick="openRules()">RULES</button>
+        <div class="rulesContainer" id="rulesContainer">
+            <div class="rulesContent">
+                <h2>Game Rules</h2>
+                <ul type="square">
+                    <li>Rock beats scissors, scissors beat <br> paper, and paper beats rock.</li> <br>
+                    <li>Agree ahead of time whether you’ll <br> count off “rock, paper, scissors, <br> shoot” or just
+                        “rock,
+                        paper, scissors.”</li>
+                    <br>
+                    <li>Use rock, paper, scissors to settle <br> minor decisions or simply play to <br>pass the time
+                    </li><br>
+                    <li>If both players lay down the same <br>hand, each player lays down another <br> hand</li>
+                </ul>
+                <button class="closeButton" onclick="closeRules()"><img src="closebutton.svg" width="20px"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS files -->
+    <script src="same.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

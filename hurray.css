@@ -1,0 +1,255 @@
+body {
+  background-color: #8cc461;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@keyframes animationOne {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes animationSecond {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes animationThree {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  52% {
+    opacity: 1;
+  }
+}
+
+/* Upper box */
+.upperbox {
+  position: absolute;
+  display: flex;
+  top: 62px;
+  height: 158px;
+  left: 22.5rem;
+  width: 800px;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 1.4rem 1rem 2rem;
+}
+
+/* Win */
+.hurray {
+  position: absolute;
+  top: 410px;
+  left: 536px;
+  height: 86px;
+  width: 464px;
+  font-size: 91px;
+  font-weight: 600;
+  line-height: 106px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  word-spacing: 1px;
+}
+.youWon {
+  position: absolute;
+  top: 533px;
+  left: 515px;
+  height: 68px;
+  width: 550px;
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Play Button */
+.playButton {
+  position: absolute;
+  top: 625px;
+  left: 680px;
+  width: 192px;
+  height: 44px;
+  border: solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+/* Star design */
+.sr1 {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  top: 185px;
+  left: 490px;
+  animation: animationOne 2s infinite;
+}
+.sr2 {
+  position: absolute;
+  width: 103px;
+  height: 103px;
+  top: 60px;
+  left: 830px;
+  animation: animationSecond 3s infinite;
+}
+.sr3 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 80px;
+  left: 610px;
+  animation: animationThree 2s infinite;
+}
+.sr4 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 100px;
+  left: 720px;
+  animation: animationOne 3s infinite;
+}
+.sr5 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 340px;
+  left: 590px;
+  animation: animationSecond 2s infinite;
+}
+.sr6 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 226px;
+  left: 900px;
+  animation: animationThree 1.7s infinite;
+}
+.sr7 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 155px;
+  left: 960px;
+  animation: animationOne 2s infinite;
+}
+.sr9 {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  top: 127px;
+  left: 560px;
+  animation: animationSecond 3s infinite;
+}
+.trophy {
+  position: absolute;
+  width: 200.43px;
+  height: 201px;
+  top: 170px;
+  left: 675px;
+}
+
+/* rule button */
+.ruleButton {
+  position: absolute;
+  top: 675px;
+  width: 119px;
+  height: 35px;
+  left: 1375px;
+  background-color: #8cc461;
+
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: center;
+  line-height: 14px;
+}
+.rulesContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.rulesContent {
+  position: absolute;
+  width: 278px;
+  height: 345px;
+  top: 454px;
+  left: 1315px;
+  color: #ffffff;
+  border: 7px solid #ffffff;
+  border-radius: 13px;
+  background-color: #004429;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ul {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+li::marker {
+  position: relative;
+  top: 50px;
+  color: #ffd600;
+  font-size: 20px;
+}
+h2 {
+  position: absolute;
+  width: 190px;
+  top: 25px;
+  height: 27px;
+  left: 80px;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 33px;
+}
+.closeButton {
+  position: absolute;
+  top: -36px;
+  left: 299px;
+  background-color: #ff0000;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,236 @@
+body {
+  background-color: #8cc461;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Upper Box */
+.upperbox {
+  position: absolute;
+  display: flex;
+  top: 55px;
+  height: 160px;
+  left: 22.5rem;
+  width: 810px;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2px;
+}
+.rock,
+.paper,
+.scissor {
+  position: absolute;
+  width: 135px;
+  height: 37px;
+  left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 3px;
+  line-height: 46.66px;
+  color: #ffffff;
+}
+.rock {
+  top: 16px;
+}
+.paper {
+  top: 58px;
+}
+.scissor {
+  top: 101px;
+}
+
+/* Score Boxes */
+.score {
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  height: 128px;
+  width: 300px;
+  border-radius: 9px;
+  justify-content: space-between;
+}
+.scoreBoxOne,
+.scoreBoxTwo {
+  padding-top: 10px;
+  text-align: center;
+  width: 139px;
+  height: 128px;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+.computer,
+.boxOne {
+  color: #656565;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 19.92px;
+  letter-spacing: 0.1rem;
+}
+.youSco,
+.comSco {
+  color: #252525;
+  font-weight: 700;
+  font-size: 65px;
+}
+.your,
+.boxTwo {
+  color: #656565;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 19.92px;
+  letter-spacing: 0.1rem;
+}
+
+/* Rock Paper Scissor */
+#rock {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 343px;
+  left: 569px;
+  border: 16px solid #0074b6;
+  border-radius: 50%;
+  padding: 19px;
+  background-color: #ffffff;
+  z-index: 149;
+  cursor: pointer;
+}
+#scissor {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 343px;
+  left: 854px;
+  border-radius: 50%;
+  border: 16px solid #bd00ff;
+  padding: 19px;
+  background-color: #ffffff;
+  transform: rotate(5.27deg);
+  z-index: 149;
+  cursor: pointer;
+}
+#paper {
+  position: absolute;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  top: 548px;
+  left: 718px;
+  border-radius: 50%;
+  border: 16px solid #ffa943;
+  padding: 19px;
+  background-color: #ffffff;
+  z-index: 149;
+  cursor: pointer;
+}
+.horizline {
+  position: absolute;
+  top: 409px;
+  width: 185px;
+  left: 699px;
+  border: 2px white;
+  opacity: 10;
+}
+.leftvertical {
+  position: absolute;
+  top: 528px;
+  width: 185px;
+  left: 635px;
+  border: 2px none black;
+  transform: rotate(55.58deg);
+  transform-origin: center;
+}
+.rightvertical {
+  position: absolute;
+  top: 526px;
+  width: 185px;
+  left: 766px;
+  border: 2px none;
+  transform: rotate(124deg);
+  transform-origin: center;
+}
+
+/* Rule Button */
+.ruleButton {
+  position: absolute;
+  top: 675px;
+  left: 1375px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid white;
+  width: 119px;
+  height: 35px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: center;
+  line-height: 13px;
+  background-color: #8cc461;
+}
+.rulesContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.rulesContent {
+  position: absolute;
+  width: 278px;
+  height: 345px;
+  top: 454px;
+  left: 1315px;
+  color: #ffffff;
+  border: 7px solid #ffffff;
+  border-radius: 13px;
+  background-color: #004429;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+ul {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+li::marker {
+  position: relative;
+  top: 50px;
+  color: #ffd600;
+  font-size: 20px;
+}
+h2 {
+  position: absolute;
+  width: 190px;
+  top: 25px;
+  height: 27px;
+  left: 80px;
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 33px;
+}
+.closeButton {
+  position: absolute;
+  top: -36px;
+  left: 299px;
+  background-color: #ff0000;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
